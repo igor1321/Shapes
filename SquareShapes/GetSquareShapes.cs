@@ -11,6 +11,6 @@ public static class GetSquareShapes
 
     public static double GetSquareTriangle(double a, double b, double c)
     {
-        return new Triangle(a, b, b).GetSquare();
+        return new Triangle(a, b, c).GetSquare();
     }
 }

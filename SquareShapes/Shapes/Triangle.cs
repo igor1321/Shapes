@@ -9,7 +9,7 @@ public class Triangle: IShapes
     private double sideThird;
     public Triangle(double a, double b, double c)
     {
-        if ((a <= 0 || b <= 0 || c <= 0) && (a + b < c || b + c < a || a + c < b))
+        if ((a <= 0 || b <= 0 || c <= 0) || (a + b < c || b + c < a || a + c < b))
         {
             throw new ArgumentException($"Треугольник со сторонами {a}, {b}, {c} не может существовать!");
         }
